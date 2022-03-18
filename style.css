@@ -1,0 +1,44 @@
+body {
+  background-color: aquamarine;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapped-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  height: 100vh;
+}
+.txt {
+  font-size: 10vw;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+#second {
+  z-index: 6;
+  color: rgb(204, 7, 7);
+}
+.line {
+  position: absolute;
+  left: 0;
+  background-color: beige;
+  width: 85%;
+  height: 1vw;
+
+  animation-name: example;
+  animation-duration: 2s;
+  z-index: 5;
+}
+
+@keyframes example {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
